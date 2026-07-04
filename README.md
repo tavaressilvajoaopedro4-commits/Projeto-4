@@ -2,15 +2,6 @@
 
 Sistema de Gerenciamento de Pessoas com JavaFX e PostgreSQL
 
-## 🚀 Setup/Instalação
-
-### Pré-requisitos
-- **Java 11+** (recomendado Java 17+)
-- **PostgreSQL 12+**
-- **Maven 3.6+**
-
-### Passos para executar
-
 1. **Criar o banco de dados:**
 ```sql
 CREATE DATABASE seu_banco;
@@ -39,7 +30,7 @@ mvn javafx:run
 
 ---
 
-## 📊 Tabela pessoa
+Tabela pessoa
 
 ```sql
 CREATE TABLE pessoa (
@@ -53,7 +44,7 @@ CREATE TABLE pessoa (
 
 ---
 
-## 📦 Dependências Maven
+Dependências Maven
 
 ```xml
 <!-- PostgreSQL Driver -->
@@ -85,7 +76,7 @@ CREATE TABLE pessoa (
 
 ---
 
-## 👤 Classe Pessoa (Model)
+Classe Pessoa (Model)
 
 ```java
 package model;
@@ -192,7 +183,7 @@ public class ConnectionFactory {
 
 ---
 
-## 💾 PessoaDAO
+PessoaDAO
 
 ```java
 package dao;
@@ -279,7 +270,7 @@ public class PessoaDAO {
 
 ---
 
-## 🎮 PessoaController
+PessoaController
 
 ```java
 package controller;
@@ -387,16 +378,4 @@ public class PessoaController {
         alert.showAndWait();
     }
 }
-```
 
----
-
-## ✅ Melhorias Implementadas
-
-- ✅ Adicionada seção de Setup/Instalação
-- ✅ Classe Pessoa completa com getters e setters
-- ✅ Dependências JavaFX adicionadas
-- ✅ Plugin Maven para JavaFX
-- ✅ TableColumn mappings no controller
-- ✅ Validações básicas de campos
-- ✅ Método `toString()` na classe Pessoa
